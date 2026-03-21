@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf node_modules package-lock.json)",
+      "Bash(npm install:*)",
+      "Bash(npx react-scripts:*)",
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''package.json'',''utf8''\\)\\); console.log\\(''package.json is valid''\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(npx update-browserslist-db@latest)",
+      "Bash(CI=true npx react-scripts build)",
+      "Bash(rm -rf node_modules/.cache)",
+      "Bash(npm run:*)",
+      "Bash(rm -rf build node_modules/.cache)",
+      "Bash(GENERATE_SOURCEMAP=false node -e \"require\\(''react-scripts/scripts/build''\\)\")",
+      "Bash(node --stack-trace-limit=100 -e \":*)",
+      "Bash(node -e \"const d=require\\(''''fs''''\\).readFileSync\\(''''/dev/stdin'''',''''utf8''''\\);const p=JSON.parse\\(d\\);console.log\\(p.version\\);\")",
+      "Bash(node -e \"console.log\\(require\\(''webpack/package.json''\\).version\\)\")",
+      "Bash(npm view:*)"
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import publicUrl from "../../utils/publicUrl";
 
 function Herosection({ position = {}, elementDimensions = {}, light }) {
   const { x = 0, y = 0 } = position;
@@ -23,7 +24,7 @@ function Herosection({ position = {}, elementDimensions = {}, light }) {
     >
       <div className="container">
         <div className="intro">
-          <img src="./images/kklphoto.png" alt="Kyaw Kyaw Lwin" className="mb-4 img-circle" />
+          <img src={publicUrl + "/images/kklphoto.png"} alt="Kyaw Kyaw Lwin" className="mb-4 img-circle" />
 
           <h1 className="mb-2 mt-0">Kyaw Kyaw Lwin</h1>
           <p>

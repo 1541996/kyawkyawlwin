@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import ScrollAnimation from "./ScrollAnimation";
 
 function Timeline({ education }) {
   const { years, title, content } = education;

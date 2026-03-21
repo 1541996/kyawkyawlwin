@@ -1,12 +1,12 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-//import Counter from "../elements/Counter";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
+import publicUrl from "../../utils/publicUrl";
 
 const aboutContent = {
   name: "Kyaw Kyaw Lwin",
-  avatarImage: "/images/kklphoto.png",
+  avatarImage: publicUrl + "/images/kklphoto.png",
   content:
     "I earned my bachelor degree from University of Computer Studies, Yangon and have built a strong professional foundation. My expertise includes consulting, designing, developing, managing, and maintaining software applications for various clients. With over 7 years of experience as a software developer, I specialize in web development using technologies like C#, .Net Framework, ASP.NET MVC, ASP.NET CORE, Blazor, HTML, CSS, Bootstrap, JavaScript, JQuery, AJAX and AngularJS. I excel in developing web applications, websites, APIs, and databases, employing both Waterfall and Agile methodologies. Passionate about technology and collaborative problem-solving, I have successfully managed over 20 software development projects.",
 };
@@ -100,7 +100,7 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href="/images/Kyaw_Kyaw_LwinCV.pdf" target="_blank" rel="noreferrer" className="btn btn-default">
+                    <a href={publicUrl + "/images/Kyaw_Kyaw_LwinCV.pdf"} target="_blank" rel="noreferrer" className="btn btn-default">
                       Download CV
                     </a>
                   </div>

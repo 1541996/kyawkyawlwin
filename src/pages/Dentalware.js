@@ -2,6 +2,7 @@
 import React from 'react';
 import Header3 from '../components/layouts/Header3';
 import Footer from '../components/layouts/Footer';
+import publicUrl from '../utils/publicUrl';
 
 const DentalWare = () => {
   return (
@@ -29,7 +30,7 @@ const DentalWare = () => {
             }}>
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwlogin.png" 
+              src={publicUrl + "/images/dw/dwlogin.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -74,7 +75,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwappointment.png" 
+              src={publicUrl + "/images/dw/dwappointment.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -123,7 +124,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwpatient.png" 
+              src={publicUrl + "/images/dw/dwpatient.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -161,7 +162,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwtodo.png" 
+              src={publicUrl + "/images/dw/dwtodo.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -209,7 +210,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwusers.png" 
+              src={publicUrl + "/images/dw/dwusers.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -249,7 +250,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwinitailcontact.png" 
+              src={publicUrl + "/images/dw/dwinitailcontact.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -295,7 +296,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/dwmedicalhistory.png" 
+              src={publicUrl + "/images/dw/dwmedicalhistory.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -340,7 +341,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/pendingtr.png" 
+              src={publicUrl + "/images/dw/pendingtr.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -385,7 +386,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/addtr.png" 
+              src={publicUrl + "/images/dw/addtr.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -430,7 +431,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/bookinglist.png" 
+              src={publicUrl + "/images/dw/bookinglist.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -483,7 +484,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/recall.png" 
+              src={publicUrl + "/images/dw/recall.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />
@@ -529,7 +530,7 @@ const DentalWare = () => {
         <div className="right-content">
           <div className="image-placeholder">
             <img 
-              src="/images/dw/feeguide.png" 
+              src={publicUrl + "/images/dw/feeguide.png"}
               alt="DentalWare software interface" 
               className="software-image"
             />

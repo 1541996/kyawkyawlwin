@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import ScrollAnimation from "../elements/ScrollAnimation";
 import Pagetitle from "../elements/Pagetitle";
 import Portfolio from "../elements/Portfolio";
+import publicUrl from "../../utils/publicUrl";
 
 const filters = [
   { id: 1, text: "remote works (currently working project)" },
@@ -40,12 +41,12 @@ const allData = [
     image:
       "https://portalvhdslvb28rs1c3tmc.blob.core.windows.net/yammo/allstaricon/careme_log_new.svg",
     popupLink: [
-      "images/dw/careme1.png",
-      "images/dw/careme2.png",
-      "images/dw/careme3.png",
-      "images/dw/careme4.png",
-      "images/dw/careme5.png",
-      "images/dw/careme6.png",
+      publicUrl + "/images/dw/careme1.png",
+      publicUrl + "/images/dw/careme2.png",
+      publicUrl + "/images/dw/careme3.png",
+      publicUrl + "/images/dw/careme4.png",
+      publicUrl + "/images/dw/careme5.png",
+      publicUrl + "/images/dw/careme6.png",
     ],
     filter: "developed at yammobots co. ltd.",
     cname: "work-img",
@@ -66,7 +67,7 @@ const allData = [
     title: "Asia Royal Hospital Chat Bot",
     category: "messenger chat bot",
     desc: "Services and information about Asia Royal Hospital.",
-    image: "/images/asiaroyalhospitals.jpg",
+    image: publicUrl + "/images/asiaroyalhospitals.jpg",
     link: "https://www.messenger.com/t/246812222184086",
     filter: "developed at yammobots co. ltd.",
     cname: "work-img",
@@ -86,21 +87,21 @@ const allData = [
     title: "IG Eco Wash",
     category: "Android App",
     desc: "Car Waterless Service.",
-    image: "/images/ecowash.jpg",
+    image: publicUrl + "/images/ecowash.jpg",
     popupLink: [
-      "images/apk/eco_1.jpg",
-      "images/apk/eco_2.jpg",
-      "images/apk/eco_3.jpg",
-      "images/apk/eco_4.jpg",
-      "images/apk/eco_5.jpg",
-      "images/apk/eco_6.jpg",
-      "images/apk/eco_7.jpg",
-      "images/apk/eco_8.jpg",
-      "images/apk/eco_9.jpg",
-      "images/apk/eco_10.jpg",
-      "images/apk/eco_11.jpg",
-      "images/apk/eco_12.jpg",
-      "images/apk/eco_13.jpg",
+      publicUrl + "/images/apk/eco_1.jpg",
+      publicUrl + "/images/apk/eco_2.jpg",
+      publicUrl + "/images/apk/eco_3.jpg",
+      publicUrl + "/images/apk/eco_4.jpg",
+      publicUrl + "/images/apk/eco_5.jpg",
+      publicUrl + "/images/apk/eco_6.jpg",
+      publicUrl + "/images/apk/eco_7.jpg",
+      publicUrl + "/images/apk/eco_8.jpg",
+      publicUrl + "/images/apk/eco_9.jpg",
+      publicUrl + "/images/apk/eco_10.jpg",
+      publicUrl + "/images/apk/eco_11.jpg",
+      publicUrl + "/images/apk/eco_12.jpg",
+      publicUrl + "/images/apk/eco_13.jpg",
     ],
     filter: "freelance works",
     cname: "work-img",
@@ -110,15 +111,15 @@ const allData = [
     title: "Dental App",
     category: "Android App",
     desc: "Manage dental patients and treatments.",
-    image: "images/apk/dental_logo.jpg",
+    image: publicUrl + "/images/apk/dental_logo.jpg",
     popupLink: [
-      "images/apk/dental_3.jpg",
-      "images/apk/dental_4.jpg",
-      "images/apk/dental_5.jpg",
-      "images/apk/dental_6.jpg",
-      "images/apk/dental_7.jpg",
-      "images/apk/dental_1.jpg",
-      "images/apk/dental_2.jpg",
+      publicUrl + "/images/apk/dental_3.jpg",
+      publicUrl + "/images/apk/dental_4.jpg",
+      publicUrl + "/images/apk/dental_5.jpg",
+      publicUrl + "/images/apk/dental_6.jpg",
+      publicUrl + "/images/apk/dental_7.jpg",
+      publicUrl + "/images/apk/dental_1.jpg",
+      publicUrl + "/images/apk/dental_2.jpg",
     ],
     filter: "freelance works",
     cname: "work-img",
@@ -128,7 +129,7 @@ const allData = [
     title: "Content Management System",
     category: "web application",
     desc: "I developed customized CMS system for various customers.",
-    image: "images/CMS.jpg",
+    image: publicUrl + "/images/CMS.jpg",
     popupLink: ["images/CMS.jpg"],
     filter: "freelance works",
     cname: "work-img",
@@ -138,7 +139,7 @@ const allData = [
     title: "MOE THEE Clinic and Hospital",
     category: "website",
     desc: "Developed a complete CMS-driven website for MOE THEE Clinic & Hospital, enabling easy content management and service updates.",
-    image: "/images/moethee.png",
+    image: publicUrl + "/images/moethee.png",
     link: "https://moethee.com/",
     filter: "freelance works",
     cname: "work-img",
@@ -148,12 +149,12 @@ const allData = [
     title: "Attendance System",
     category: "website",
     desc: "A web-based attendance management system designed to track employee check-ins, absences, and working hours efficiently in real time.",
-    image: "/images/mm.jpg",
+    image: publicUrl + "/images/mm.jpg",
     popupLink: [
-      "images/login.png",
-      "images/attendancelist.png",
-      "images/attendancelist2.png",
-      "images/list3.png",
+      publicUrl + "/images/login.png",
+      publicUrl + "/images/attendancelist.png",
+      publicUrl + "/images/attendancelist2.png",
+      publicUrl + "/images/list3.png",
     ],
     filter: "freelance works",
     cname: "work-img",
@@ -219,7 +220,7 @@ function Works() {
               </div>
               <div className="col-md-6">
                 <img
-                  src="/images/dw/dwappointment.png"
+                  src={publicUrl + "/images/dw/dwappointment.png"}
                   alt="DentalWare software interface"
                   className=""
                   style={{ width: "100%" }}

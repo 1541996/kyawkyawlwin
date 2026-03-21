@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
+import publicUrl from "../../utils/publicUrl";
 
 const servicesData = [
   {
     id: 1,
-    icon: "images/service-2.svg",
+    icon: publicUrl + "/images/service-2.svg",
     title: "Software Development",
     content:"I offer a variety of website design and development services, from creating mobile web development solutions and responsive website designs to building custom e-commerce and booking systems using the latest technologies.",
     color: "#F9D74C",
@@ -14,7 +15,7 @@ const servicesData = [
   },
   {
     id: 2,
-    icon: "images/service-1.svg",
+    icon: publicUrl + "/images/service-1.svg",
     title: "Good Customer Support",
     content:
       "After developing softwares, I give good customer support for you. If you got some difficulties or problems when using software, You could contact freely to me anytime anywhere. I am ready to support your business.",
@@ -23,7 +24,7 @@ const servicesData = [
   },
   {
     id: 3,
-    icon: "images/services-3.png",
+    icon: publicUrl + "/images/services-3.png",
     title: "Business consulting",
     content:
       "I give good and free consulting for your business with IT. You can discuss which software is suitable for your business. When you don't know how to start your business with softwares, I am here to consult with you.",
