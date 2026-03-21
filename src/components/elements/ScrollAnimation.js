@@ -1,19 +1,33 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-function ScrollAnimation({ animateIn, animateOnce = true, children }) {
+const ScrollAnimation = function(props) {
   const ref = useRef(null);
+  const visible = useVisible(ref, props.animateOnce !== false);
+
+  return (
+    <div
+      ref={ref}
+      className={visible ? "animate__animated animate__" + (props.animateIn || "fadeInUp") : ""}
+      style={visible ? undefined : { opacity: 0 }}
+    >
+      {props.children}
+    </div>
+  );
+};
+
+function useVisible(ref, once) {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const node = ref.current;
+  useEffect(function() {
+    var node = ref.current;
     if (!node) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+    var observer = new IntersectionObserver(
+      function(entries) {
+        if (entries[0].isIntersecting) {
           setIsVisible(true);
-          if (animateOnce) observer.unobserve(node);
-        } else if (!animateOnce) {
+          if (once) observer.unobserve(node);
+        } else if (!once) {
           setIsVisible(false);
         }
       },
@@ -21,18 +35,10 @@ function ScrollAnimation({ animateIn, animateOnce = true, children }) {
     );
 
     observer.observe(node);
-    return () => observer.unobserve(node);
-  }, [animateOnce]);
+    return function() { observer.unobserve(node); };
+  }, [ref, once]);
 
-  return (
-    <div
-      ref={ref}
-      className={isVisible ? `animate__animated animate__${animateIn}` : ""}
-      style={isVisible ? {} : { opacity: 0 }}
-    >
-      {children}
-    </div>
-  );
+  return isVisible;
 }
 
 export default ScrollAnimation;
