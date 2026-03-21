@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Header3 from "../components/layouts/Header3";
 import Footer from "../components/layouts/Footer";
 import About from "../components/sections/About";
@@ -13,6 +13,7 @@ import Works from "../components/sections/Works";
 function Homepage3() {
   const heroRef = useRef(null);
   const location = useLocation();
+  const navigate = useNavigate();
   const [cursorState, setCursorState] = useState({
     position: { x: 0, y: 0 },
     elementDimensions: { width: 0, height: 0 },
@@ -27,10 +28,10 @@ function Homepage3() {
           duration: 500,
           smooth: true,
         });
-        window.history.replaceState(null, "", "/");
+        navigate("/", { replace: true });
       }, 500);
     }
-  }, [location.search]);
+  }, [location.search, navigate]);
 
   const handleMouseMove = useCallback((e) => {
     if (heroRef.current) {
