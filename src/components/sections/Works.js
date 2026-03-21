@@ -210,11 +210,11 @@ function Works() {
                   where I contribute to the development of DentalWare — a comprehensive dental practice
                   management system designed for general practitioners. It offers key features such as
                   appointment scheduling, billing, electronic claims, patient recall, clinical
-                  documentation, and practice analytics. Please click <a href="#/dentalware" className="text-danger">
+                  documentation, and practice analytics. Please click <a href="#/mywork" className="text-danger">
                             View More
                   </a> button to see additional screenshots and examples of my work in DentalWare.
                 </p>
-                <a href="#/dentalware" className="btn btn-default mt-3 mb-4 mb-md-0">
+                <a href="#/mywork" className="btn btn-default mt-3 mb-4 mb-md-0">
                   View More
                 </a>
               </div>

@@ -1,10 +1,14 @@
 // DentalWare.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header3 from '../components/layouts/Header3';
 import Footer from '../components/layouts/Footer';
 import publicUrl from '../utils/publicUrl';
 
 const DentalWare = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
     <Header3 />

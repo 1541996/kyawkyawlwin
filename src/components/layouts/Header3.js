@@ -106,12 +106,12 @@ function Header3({ light }) {
                 onMouseEnter={() => setShowWorksDropdown(true)}
                 onMouseLeave={() => setShowWorksDropdown(false)}
               >
-                <span className={location.pathname === "/dentalware" ? "nav-link active" : "nav-link"} style={{ cursor: "pointer" }}>
+                <span className={location.pathname === "/mywork" ? "nav-link active" : "nav-link"} style={{ cursor: "pointer" }}>
                   Works <span className="dropdown-arrow">&#9662;</span>
                 </span>
                 <ul className={showWorksDropdown ? "works-submenu show" : "works-submenu"}>
                   <li>
-                    <a href="#/dentalware" className="submenu-link">
+                    <a href="#/mywork" className="submenu-link">
                       Current Projects
                     </a>
                   </li>
