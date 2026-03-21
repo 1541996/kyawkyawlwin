@@ -68,7 +68,7 @@ function Header3({ light }) {
     >
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <a href="/" className="logo-title" style={{ textDecoration: "none", color: "inherit" }}>
+          <a href="#/" className="logo-title" style={{ textDecoration: "none", color: "inherit" }}>
             Kyaw Kyaw Lwin
           </a>
           <button
@@ -111,7 +111,7 @@ function Header3({ light }) {
                 </span>
                 <ul className={showWorksDropdown ? "works-submenu show" : "works-submenu"}>
                   <li>
-                    <a href="/dentalware" className="submenu-link">
+                    <a href="#/dentalware" className="submenu-link">
                       Current Projects
                     </a>
                   </li>
