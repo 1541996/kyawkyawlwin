@@ -1,5 +1,5 @@
 import React from "react";
-import TrackVisibility from "react-on-screen";
+import TrackVisibility from "../elements/TrackVisibility";
 import Pagetitle from "../elements/Pagetitle";
 import Skill from "../elements/Skill";
 import publicUrl from "../../utils/publicUrl";
