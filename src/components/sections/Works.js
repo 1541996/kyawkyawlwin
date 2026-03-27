@@ -144,22 +144,22 @@ const allData = [
     filter: "freelance works",
     cname: "work-img",
   },
-  {
-    id: 7,
-    title: "Attendance System",
-    category: "website",
-    desc: "A web-based attendance management system designed to track employee check-ins, absences, and working hours efficiently in real time.",
-    image: publicUrl + "/images/mm.jpg",
-    popupLink: [
-      publicUrl + "/images/login.png",
-      publicUrl + "/images/attendancelist.png",
-      publicUrl + "/images/attendancelist2.png",
-      publicUrl + "/images/list3.png",
-    ],
-    filter: "freelance works",
-    cname: "work-img",
-    height: "383px",
-  },
+  // {
+  //   id: 7,
+  //   title: "Attendance System",
+  //   category: "website",
+  //   desc: "A web-based attendance management system designed to track employee check-ins, absences, and working hours efficiently in real time.",
+  //   image: publicUrl + "/images/mm.jpg",
+  //   popupLink: [
+  //     publicUrl + "/images/login.png",
+  //     publicUrl + "/images/attendancelist.png",
+  //     publicUrl + "/images/attendancelist2.png",
+  //     publicUrl + "/images/list3.png",
+  //   ],
+  //   filter: "freelance works",
+  //   cname: "work-img",
+  //   height: "383px",
+  // },
 ];
 
 function Works() {
